@@ -4,9 +4,23 @@ import os
 
 class MySpider(scrapy.Spider):
     name = "francsenergie_spider"
-    start_urls = ["https://www.francsenergie.ch/fr/1844-Villeneuve-VD/building/personal"]
+
+    def start_requests(self):
+        # Charger le fichier JSON contenant les communes
+        with open('/Users/saddamsatouyev/SubsidiesCrawler/subsidiesCrawler/vaud_communes.json', 'r', encoding='utf-8') as f:
+            communes = json.load(f)
+        
+        # Construire les URLs dynamiques avec le code postal et le nom de la commune
+        for commune in communes:
+            postal_code = commune['postalCode']
+            commune_name = commune['name'].replace(" ", "-")  # Remplacer les espaces par des tirets
+            url = f"https://www.francsenergie.ch/fr/{postal_code}-{commune_name}/building/personal"
+            yield scrapy.Request(url=url, callback=self.parse, meta={'commune_name': commune['name'], 'postal_code': postal_code})
 
     def parse(self, response):
+        commune_name = response.meta['commune_name']
+        postal_code = response.meta['postal_code']
+
         # Extraction des paragraphes (exemple)
         for paragraph in response.css('p::text').getall():
             yield {"paragraphe": paragraph}
@@ -25,13 +39,12 @@ class MySpider(scrapy.Spider):
             else:
                 subsidies = []
             filtered_partners_subsidies = [filtered_field for filtered_field in subsidies if filtered_field['contributor']['url'] != 'https://pronovo.ch/fr/']
-            print(filtered_partners_subsidies)
-            print("🔥🔥🔥🔥🔥")
+            
             # Mettre à jour les champs avec les champs filtrés
             json_data['town']['fields'] = filtered_partners_subsidies
             
             # Chemin du fichier de sortie
-            output_file = os.path.join(self.settings.get('FILES_STORE', ''), 'subsidies_data.json')
+            output_file = os.path.join('/Users/saddamsatouyev/SubsidiesCrawler/subsidiesCrawler/subsidies_data', f"{commune_name}_{postal_code}.json")
             
             # Sauvegarde du JSON dans un fichier
             with open(output_file, 'w', encoding='utf-8') as f:
