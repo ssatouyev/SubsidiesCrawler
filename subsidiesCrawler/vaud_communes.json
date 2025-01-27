@@ -1,0 +1,1808 @@
+[
+    {
+        "name": "Aclens",
+        "ofs": 5621,
+        "postalCode": 1123,
+        "websiteUrl": "https://www.aclens.ch"
+    },
+    {
+        "name": "Agiez",
+        "ofs": 5742,
+        "postalCode": 1352,
+        "websiteUrl": "https://www.agiez.ch"
+    },
+    {
+        "name": "Aigle",
+        "ofs": 5401,
+        "postalCode": 1860,
+        "websiteUrl": "https://www.aigle.ch"
+    },
+    {
+        "name": "Allaman",
+        "ofs": 5851,
+        "postalCode": 1165,
+        "websiteUrl": "https://www.allaman.ch"
+    },
+    {
+        "name": "Arnex-sur-Nyon",
+        "ofs": 5701,
+        "postalCode": 1277,
+        "websiteUrl": "https://www.arnex-sur-nyon.ch"
+    },
+    {
+        "name": "Arnex-sur-Orbe",
+        "ofs": 5743,
+        "postalCode": 1321,
+        "websiteUrl": "https://www.arnex-sur-orbe.ch"
+    },
+    {
+        "name": "Arzier-Le Muids",
+        "ofs": 5702,
+        "postalCode": 1273,
+        "websiteUrl": "https://www.arzier.ch"
+    },
+    {
+        "name": "Assens",
+        "ofs": 5511,
+        "postalCode": 1042,
+        "websiteUrl": "https://www.assens.ch"
+    },
+    {
+        "name": "Aubonne",
+        "ofs": 5422,
+        "postalCode": 1170,
+        "websiteUrl": "https://www.aubonne.ch"
+    },
+    {
+        "name": "Avenches",
+        "ofs": 5451,
+        "postalCode": 1580,
+        "websiteUrl": "https://www.commune-avenches.ch"
+    },
+    {
+        "name": "Ballaigues",
+        "ofs": 5744,
+        "postalCode": 1338,
+        "websiteUrl": "https://www.ballaigues.ch"
+    },
+    {
+        "name": "Ballens",
+        "ofs": 5423,
+        "postalCode": 1144,
+        "websiteUrl": "https://www.ballens.ch"
+    },
+    {
+        "name": "Bassins",
+        "ofs": 5703,
+        "postalCode": 1269,
+        "websiteUrl": "https://www.bassins.ch"
+    },
+    {
+        "name": "Baulmes",
+        "ofs": 5745,
+        "postalCode": 1446,
+        "websiteUrl": "https://www.baulmes.ch"
+    },
+    {
+        "name": "Bavois",
+        "ofs": 5746,
+        "postalCode": 1372,
+        "websiteUrl": "https://www.bavois.ch"
+    },
+    {
+        "name": "Begnins",
+        "ofs": 5704,
+        "postalCode": 1268,
+        "websiteUrl": "https://www.begnins.ch"
+    },
+    {
+        "name": "Belmont-sur-Lausanne",
+        "ofs": 5581,
+        "postalCode": 1092,
+        "websiteUrl": "https://www.belmont.ch"
+    },
+    {
+        "name": "Belmont-sur-Yverdon",
+        "ofs": 5902,
+        "postalCode": 1432,
+        "websiteUrl": "https://www.belmont-sur-yverdon.ch"
+    },
+    {
+        "name": "Bercher",
+        "ofs": 5512,
+        "postalCode": 1038,
+        "websiteUrl": "https://www.bercher-vd.ch"
+    },
+    {
+        "name": "Berolle",
+        "ofs": 5424,
+        "postalCode": 1149,
+        "websiteUrl": "https://www.berolle.ch"
+    },
+    {
+        "name": "Bettens",
+        "ofs": 5471,
+        "postalCode": 1042,
+        "websiteUrl": "https://www.commune-bettens.ch"
+    },
+    {
+        "name": "Bex",
+        "ofs": 5402,
+        "postalCode": 1880,
+        "websiteUrl": "https://www.bex.ch"
+    },
+    {
+        "name": "Bière",
+        "ofs": 5425,
+        "postalCode": 1145,
+        "websiteUrl": "https://www.biere-vd.ch"
+    },
+    {
+        "name": "Bioley-Magnoux",
+        "ofs": 5903,
+        "postalCode": 1407,
+        "websiteUrl": "https://www.bioley-magnoux.ch"
+    },
+    {
+        "name": "Bioley-Orjulaz",
+        "ofs": 5513,
+        "postalCode": 1042,
+        "websiteUrl": "https://www.bioley-orjulaz.ch"
+    },
+    {
+        "name": "Blonay - Saint-Légier",
+        "ofs": 5892,
+        "postalCode": 1807,
+        "websiteUrl": "https://www.blonay-saint-legier.ch"
+    },
+    {
+        "name": "Bofflens",
+        "ofs": 5747,
+        "postalCode": 1353,
+        "websiteUrl": "https://www.bofflens.ch"
+    },
+    {
+        "name": "Bogis-Bossey",
+        "ofs": 5705,
+        "postalCode": 1279,
+        "websiteUrl": "https://www.bogis-bossey.ch"
+    },
+    {
+        "name": "Bonvillars",
+        "ofs": 5551,
+        "postalCode": 1427,
+        "websiteUrl": "https://www.bonvillars.ch"
+    },
+    {
+        "name": "Borex",
+        "ofs": 5706,
+        "postalCode": 1277,
+        "websiteUrl": "https://www.borex.ch"
+    },
+    {
+        "name": "Bottens",
+        "ofs": 5514,
+        "postalCode": 1041,
+        "websiteUrl": "https://www.bottens.ch"
+    },
+    {
+        "name": "Bougy-Villars",
+        "ofs": 5426,
+        "postalCode": 1172,
+        "websiteUrl": "https://www.bougy-villars.ch"
+    },
+    {
+        "name": "Boulens",
+        "ofs": 5661,
+        "postalCode": 1063,
+        "websiteUrl": "https://www.boulens.ch"
+    },
+    {
+        "name": "Bourg-en-Lavaux",
+        "ofs": 5613,
+        "postalCode": 1096,
+        "websiteUrl": "https://www.b-e-l.ch/fr/officiel"
+    },
+    {
+        "name": "Bournens",
+        "ofs": 5472,
+        "postalCode": 1035,
+        "websiteUrl": "https://www.bournens.ch"
+    },
+    {
+        "name": "Boussens",
+        "ofs": 5473,
+        "postalCode": 1034,
+        "websiteUrl": "https://www.boussens.ch"
+    },
+    {
+        "name": "Bremblens",
+        "ofs": 5622,
+        "postalCode": 1121,
+        "websiteUrl": "https://www.bremblens.ch"
+    },
+    {
+        "name": "Bretigny-sur-Morrens",
+        "ofs": 5515,
+        "postalCode": 1053,
+        "websiteUrl": "https://bretigny.ch/"
+    },
+    {
+        "name": "Bretonnières",
+        "ofs": 5748,
+        "postalCode": 1329,
+        "websiteUrl": "https://www.bretonnieres.ch"
+    },
+    {
+        "name": "Buchillon",
+        "ofs": 5623,
+        "postalCode": 1164,
+        "websiteUrl": "https://www.buchillon.ch"
+    },
+    {
+        "name": "Bullet",
+        "ofs": 5552,
+        "postalCode": 1453,
+        "websiteUrl": "https://www.bullet.ch"
+    },
+    {
+        "name": "Bursinel",
+        "ofs": 5852,
+        "postalCode": 1195,
+        "websiteUrl": "https://www.bursinel.ch"
+    },
+    {
+        "name": "Bursins",
+        "ofs": 5853,
+        "postalCode": 1183,
+        "websiteUrl": "https://www.bursins.ch"
+    },
+    {
+        "name": "Burtigny",
+        "ofs": 5854,
+        "postalCode": 1268,
+        "websiteUrl": "https://www.burtigny.ch"
+    },
+    {
+        "name": "Bussigny",
+        "ofs": 5624,
+        "postalCode": 1030,
+        "websiteUrl": "https://www.bussigny.ch"
+    },
+    {
+        "name": "Bussy-sur-Moudon",
+        "ofs": 5663,
+        "postalCode": 1514,
+        "websiteUrl": "https://www.bussy-sur-moudon.ch"
+    },
+    {
+        "name": "Chamblon",
+        "ofs": 5904,
+        "postalCode": 1436,
+        "websiteUrl": "https://www.chamblon.ch"
+    },
+    {
+        "name": "Champagne",
+        "ofs": 5553,
+        "postalCode": 1424,
+        "websiteUrl": "https://www.champagne.ch"
+    },
+    {
+        "name": "Champtauroz",
+        "ofs": 5812,
+        "postalCode": 1537,
+        "websiteUrl": "https://www.champtauroz.ch"
+    },
+    {
+        "name": "Champvent",
+        "ofs": 5905,
+        "postalCode": 1443,
+        "websiteUrl": "https://www.champvent.ch"
+    },
+    {
+        "name": "Chardonne",
+        "ofs": 5882,
+        "postalCode": 1803,
+        "websiteUrl": "https://www.chardonne.ch"
+    },
+    {
+        "name": "Château-d'Œx",
+        "ofs": 5841,
+        "postalCode": 1660,
+        "websiteUrl": "https://www.chateaudoex-admin.ch"
+    },
+    {
+        "name": "Chavannes-de-Bogis",
+        "ofs": 5707,
+        "postalCode": 1279,
+        "websiteUrl": "https://www.chavannes-de-bogis.ch"
+    },
+    {
+        "name": "Chavannes-des-Bois",
+        "ofs": 5708,
+        "postalCode": 1290,
+        "websiteUrl": "https://www.chavannes-des-bois.ch"
+    },
+    {
+        "name": "Chavannes-le-Chêne",
+        "ofs": 5907,
+        "postalCode": 1464,
+        "websiteUrl": "https://www.chavannes-le-chene.ch"
+    },
+    {
+        "name": "Chavannes-le-Veyron",
+        "ofs": 5475,
+        "postalCode": 1128,
+        "websiteUrl": "https://www.chavannes-le-veyron.ch"
+    },
+    {
+        "name": "Chavannes-près-Renens",
+        "ofs": 5627,
+        "postalCode": 1022,
+        "websiteUrl": "https://www.chavannes.ch"
+    },
+    {
+        "name": "Chavannes-sur-Moudon",
+        "ofs": 5665,
+        "postalCode": 1512,
+        "websiteUrl": "https://www.chavannes-sur-moudon.ch"
+    },
+    {
+        "name": "Chavornay",
+        "ofs": 5749,
+        "postalCode": 1373,
+        "websiteUrl": "https://www.chavornay.ch"
+    },
+    {
+        "name": "Chêne-Pâquier",
+        "ofs": 5908,
+        "postalCode": 1464,
+        "websiteUrl": "https://www.chene-paquier.ch"
+    },
+    {
+        "name": "Cheseaux-Noréaz",
+        "ofs": 5909,
+        "postalCode": 1400,
+        "websiteUrl": "https://www.cheseaux-noreaz.ch"
+    },
+    {
+        "name": "Cheseaux-sur-Lausanne",
+        "ofs": 5582,
+        "postalCode": 1033,
+        "websiteUrl": "https://www.cheseaux.ch"
+    },
+    {
+        "name": "Chéserex",
+        "ofs": 5709,
+        "postalCode": 1275,
+        "websiteUrl": "https://www.cheserex.ch"
+    },
+    {
+        "name": "Chessel",
+        "ofs": 5403,
+        "postalCode": 1846,
+        "websiteUrl": "https://www.chessel.ch"
+    },
+    {
+        "name": "Chevilly",
+        "ofs": 5476,
+        "postalCode": 1316,
+        "websiteUrl": "https://www.chevilly.ch"
+    },
+    {
+        "name": "Chevroux",
+        "ofs": 5813,
+        "postalCode": 1545,
+        "websiteUrl": "https://www.chevroux.ch"
+    },
+    {
+        "name": "Chexbres",
+        "ofs": 5601,
+        "postalCode": 1071,
+        "websiteUrl": "https://www.chexbres.ch"
+    },
+    {
+        "name": "Chigny",
+        "ofs": 5628,
+        "postalCode": 1134,
+        "websiteUrl": "https://www.chigny.ch"
+    },
+    {
+        "name": "Clarmont",
+        "ofs": 5629,
+        "postalCode": 1127,
+        "websiteUrl": "https://www.clarmont.ch"
+    },
+    {
+        "name": "Coinsins",
+        "ofs": 5710,
+        "postalCode": 1267,
+        "websiteUrl": "https://www.coinsins.ch"
+    },
+    {
+        "name": "Commugny",
+        "ofs": 5711,
+        "postalCode": 1291,
+        "websiteUrl": "https://www.commugny.ch"
+    },
+    {
+        "name": "Concise",
+        "ofs": 5554,
+        "postalCode": 1426,
+        "websiteUrl": "https://www.concise.ch"
+    },
+    {
+        "name": "Coppet",
+        "ofs": 5712,
+        "postalCode": 1296,
+        "websiteUrl": "https://www.coppet.ch"
+    },
+    {
+        "name": "Corbeyrier",
+        "ofs": 5404,
+        "postalCode": 1856,
+        "websiteUrl": "https://www.corbeyrier.ch"
+    },
+    {
+        "name": "Corcelles-le-Jorat",
+        "ofs": 5785,
+        "postalCode": 1082,
+        "websiteUrl": "https://www.corcelles-le-jorat.ch"
+    },
+    {
+        "name": "Corcelles-près-Concise",
+        "ofs": 5555,
+        "postalCode": 1426,
+        "websiteUrl": "https://www.corcelles-concise.ch"
+    },
+    {
+        "name": "Corcelles-près-Payerne",
+        "ofs": 5816,
+        "postalCode": 1562,
+        "websiteUrl": "https://corcelles.ch"
+    },
+    {
+        "name": "Corseaux",
+        "ofs": 5883,
+        "postalCode": 1802,
+        "websiteUrl": "https://www.corseaux.ch"
+    },
+    {
+        "name": "Corsier-sur-Vevey",
+        "ofs": 5884,
+        "postalCode": 1804,
+        "websiteUrl": "https://www.corsier-sur-vevey.ch"
+    },
+    {
+        "name": "Cossonay",
+        "ofs": 5477,
+        "postalCode": 1304,
+        "websiteUrl": "https://www.cossonay.ch"
+    },
+    {
+        "name": "Cottens",
+        "ofs": 5478,
+        "postalCode": 1116,
+        "websiteUrl": "https://cottens-fr.ch"
+    },
+    {
+        "name": "Crans",
+        "ofs": 5713,
+        "postalCode": 1299,
+        "websiteUrl": "https://www.crans.ch"
+    },
+    {
+        "name": "Crassier",
+        "ofs": 5714,
+        "postalCode": 1263,
+        "websiteUrl": "https://www.crassier.ch"
+    },
+    {
+        "name": "Crissier",
+        "ofs": 5583,
+        "postalCode": 1023,
+        "websiteUrl": "https://www.crissier.ch"
+    },
+    {
+        "name": "Cronay",
+        "ofs": 5910,
+        "postalCode": 1406,
+        "websiteUrl": "https://www.cronay.ch"
+    },
+    {
+        "name": "Croy",
+        "ofs": 5752,
+        "postalCode": 1322,
+        "websiteUrl": "https://www.croy.ch"
+    },
+    {
+        "name": "Cuarnens",
+        "ofs": 5479,
+        "postalCode": 1148,
+        "websiteUrl": "https://www.cuarnens.ch"
+    },
+    {
+        "name": "Cuarny",
+        "ofs": 5911,
+        "postalCode": 1404,
+        "websiteUrl": "https://www.cuarny.ch"
+    },
+    {
+        "name": "Cudrefin",
+        "ofs": 5456,
+        "postalCode": 1588,
+        "websiteUrl": "https://www.cudrefin.ch"
+    },
+    {
+        "name": "Cugy",
+        "ofs": 5516,
+        "postalCode": 1053,
+        "websiteUrl": "https://www.cugy-vd.ch"
+    },
+    {
+        "name": "Curtilles",
+        "ofs": 5669,
+        "postalCode": 1521,
+        "websiteUrl": "https://www.curtilles.ch"
+    },
+    {
+        "name": "Daillens",
+        "ofs": 5480,
+        "postalCode": 1306,
+        "websiteUrl": "https://www.daillens.ch"
+    },
+    {
+        "name": "Démoret",
+        "ofs": 5912,
+        "postalCode": 1415,
+        "websiteUrl": "https://www.demoret.ch"
+    },
+    {
+        "name": "Denens",
+        "ofs": 5631,
+        "postalCode": 1135,
+        "websiteUrl": "https://www.denens.ch"
+    },
+    {
+        "name": "Denges",
+        "ofs": 5632,
+        "postalCode": 1026,
+        "websiteUrl": "https://www.denges.ch"
+    },
+    {
+        "name": "Dizy",
+        "ofs": 5481,
+        "postalCode": 1304,
+        "websiteUrl": "https://www.dizy.ch"
+    },
+    {
+        "name": "Dompierre",
+        "ofs": 5671,
+        "postalCode": 1682,
+        "websiteUrl": "https://www.dompierre-vd.ch"
+    },
+    {
+        "name": "Donneloye",
+        "ofs": 5913,
+        "postalCode": 1407,
+        "websiteUrl": "https://www.donneloye.ch"
+    },
+    {
+        "name": "Duillier",
+        "ofs": 5715,
+        "postalCode": 1266,
+        "websiteUrl": "https://www.duillier.ch"
+    },
+    {
+        "name": "Dully",
+        "ofs": 5855,
+        "postalCode": 1195,
+        "websiteUrl": "https://www.dully.ch"
+    },
+    {
+        "name": "Échallens",
+        "ofs": 5518,
+        "postalCode": 1040,
+        "websiteUrl": "https://www.echallens.ch"
+    },
+    {
+        "name": "Échandens",
+        "ofs": 5633,
+        "postalCode": 1026,
+        "websiteUrl": "https://www.echandens.ch"
+    },
+    {
+        "name": "Échichens",
+        "ofs": 5634,
+        "postalCode": 1112,
+        "websiteUrl": "https://www.echichens.ch"
+    },
+    {
+        "name": "Éclépens",
+        "ofs": 5482,
+        "postalCode": 1312,
+        "websiteUrl": "https://www.eclepens.ch"
+    },
+    {
+        "name": "Écublens",
+        "ofs": 5635,
+        "postalCode": 1024,
+        "websiteUrl": "https://www.ecublens.ch"
+    },
+    {
+        "name": "Épalinges",
+        "ofs": 5584,
+        "postalCode": 1066,
+        "websiteUrl": "https://www.epalinges.ch"
+    },
+    {
+        "name": "Épendes",
+        "ofs": 5914,
+        "postalCode": 1434,
+        "websiteUrl": "https://www.ependes.ch"
+    },
+    {
+        "name": "Essertines-sur-Rolle",
+        "ofs": 5856,
+        "postalCode": 1186,
+        "websiteUrl": "https://www.essertines-sur-rolle.ch"
+    },
+    {
+        "name": "Essertines-sur-Yverdon",
+        "ofs": 5520,
+        "postalCode": 1417,
+        "websiteUrl": "https://www.essertines-sur-yverdon.ch"
+    },
+    {
+        "name": "Étagnières",
+        "ofs": 5521,
+        "postalCode": 1037,
+        "websiteUrl": "https://www.etagnieres.ch"
+    },
+    {
+        "name": "Étoy",
+        "ofs": 5636,
+        "postalCode": 1163,
+        "websiteUrl": "https://www.etoy.ch"
+    },
+    {
+        "name": "Eysins",
+        "ofs": 5716,
+        "postalCode": 1262,
+        "websiteUrl": "https://www.eysins.ch"
+    },
+    {
+        "name": "Faoug",
+        "ofs": 5458,
+        "postalCode": 1595,
+        "websiteUrl": "https://www.faoug.ch"
+    },
+    {
+        "name": "Féchy",
+        "ofs": 5427,
+        "postalCode": 1173,
+        "websiteUrl": "https://www.fechy.ch"
+    },
+    {
+        "name": "Ferreyres",
+        "ofs": 5483,
+        "postalCode": 1313,
+        "websiteUrl": "https://www.ferreyres.ch"
+    },
+    {
+        "name": "Fey",
+        "ofs": 5522,
+        "postalCode": 1044,
+        "websiteUrl": "https://www.fey-vd.ch"
+    },
+    {
+        "name": "Fiez",
+        "ofs": 5556,
+        "postalCode": 1420,
+        "websiteUrl": "https://www.fiez.ch"
+    },
+    {
+        "name": "Fontaines-sur-Grandson",
+        "ofs": 5557,
+        "postalCode": 1421,
+        "websiteUrl": "https://www.fontaines-sur-grandson.ch"
+    },
+    {
+        "name": "Forel",
+        "ofs": 5604,
+        "postalCode": 1072,
+        "websiteUrl": "https://www.forel.ch"
+    },
+    {
+        "name": "Founex",
+        "ofs": 5717,
+        "postalCode": 1297,
+        "websiteUrl": "https://www.founex.ch"
+    },
+    {
+        "name": "Froideville",
+        "ofs": 5523,
+        "postalCode": 1059,
+        "websiteUrl": "https://www.froideville.ch"
+    },
+    {
+        "name": "Genolier",
+        "ofs": 5718,
+        "postalCode": 1272,
+        "websiteUrl": "https://www.genolier.ch"
+    },
+    {
+        "name": "Giez",
+        "ofs": 5559,
+        "postalCode": 1429,
+        "websiteUrl": "https://www.giez.ch"
+    },
+    {
+        "name": "Gilly",
+        "ofs": 5857,
+        "postalCode": 1182,
+        "websiteUrl": "https://www.gilly.ch"
+    },
+    {
+        "name": "Gimel",
+        "ofs": 5428,
+        "postalCode": 1188,
+        "websiteUrl": "https://www.gimel.ch"
+    },
+    {
+        "name": "Gingins",
+        "ofs": 5719,
+        "postalCode": 1276,
+        "websiteUrl": "https://www.gingins.ch"
+    },
+    {
+        "name": "Givrins",
+        "ofs": 5720,
+        "postalCode": 1271,
+        "websiteUrl": "https://www.givrins.ch"
+    },
+    {
+        "name": "Gland",
+        "ofs": 5721,
+        "postalCode": 1196,
+        "websiteUrl": "https://www.gland.ch"
+    },
+    {
+        "name": "Gollion",
+        "ofs": 5484,
+        "postalCode": 1124,
+        "websiteUrl": "https://www.gollion.ch"
+    },
+    {
+        "name": "Goumoëns",
+        "ofs": 5541,
+        "postalCode": 1376,
+        "websiteUrl": "https://www.goumoens.ch"
+    },
+    {
+        "name": "Grancy",
+        "ofs": 5485,
+        "postalCode": 1117,
+        "websiteUrl": "https://www.grancy.ch"
+    },
+    {
+        "name": "Grandcour",
+        "ofs": 5817,
+        "postalCode": 1543,
+        "websiteUrl": "https://www.grandcour.ch"
+    },
+    {
+        "name": "Grandevent",
+        "ofs": 5560,
+        "postalCode": 1421,
+        "websiteUrl": "https://www.grandevent.ch"
+    },
+    {
+        "name": "Grandson",
+        "ofs": 5561,
+        "postalCode": 1422,
+        "websiteUrl": "https://www.grandson.ch"
+    },
+    {
+        "name": "Grens",
+        "ofs": 5722,
+        "postalCode": 1274,
+        "websiteUrl": "https://www.grens.ch"
+    },
+    {
+        "name": "Gryon",
+        "ofs": 5405,
+        "postalCode": 1882,
+        "websiteUrl": "https://www.gryon.ch"
+    },
+    {
+        "name": "Henniez",
+        "ofs": 5819,
+        "postalCode": 1525,
+        "websiteUrl": "https://www.henniez.ch"
+    },
+    {
+        "name": "Hermenches",
+        "ofs": 5673,
+        "postalCode": 1513,
+        "websiteUrl": "https://www.hermenches.ch"
+    },
+    {
+        "name": "Jongny",
+        "ofs": 5885,
+        "postalCode": 1805,
+        "websiteUrl": "https://www.jongny.ch"
+    },
+    {
+        "name": "Jorat-Menthue",
+        "ofs": 5804,
+        "postalCode": 1058,
+        "websiteUrl": "https://www.jorat-menthue.ch"
+    },
+    {
+        "name": "Jorat-Mézières",
+        "ofs": 5806,
+        "postalCode": 1083,
+        "websiteUrl": "https://www.jorat-mezieres.ch"
+    },
+    {
+        "name": "Jouxtens-Mézery",
+        "ofs": 5585,
+        "postalCode": 1008,
+        "websiteUrl": "https://www.jouxtens-mezery.ch"
+    },
+    {
+        "name": "Juriens",
+        "ofs": 5754,
+        "postalCode": 1326,
+        "websiteUrl": "https://www.juriens.ch"
+    },
+    {
+        "name": "La Chaux",
+        "ofs": 5474,
+        "postalCode": 1308,
+        "websiteUrl": "https://www.lachaux.ch"
+    },
+    {
+        "name": "La Praz",
+        "ofs": 5758,
+        "postalCode": 1148,
+        "websiteUrl": "https://www.lapraz.ch"
+    },
+    {
+        "name": "La Rippe",
+        "ofs": 5726,
+        "postalCode": 1278,
+        "websiteUrl": "https://www.larippe.ch"
+    },
+    {
+        "name": "La Sarraz",
+        "ofs": 5498,
+        "postalCode": 1315,
+        "websiteUrl": "https://www.lasarraz.ch"
+    },
+    {
+        "name": "La Tour-de-Peilz",
+        "ofs": 5889,
+        "postalCode": 1814,
+        "websiteUrl": "https://www.la-tour-de-peilz.ch"
+    },
+    {
+        "name": "L'Abbaye",
+        "ofs": 5871,
+        "postalCode": 1344,
+        "websiteUrl": "https://www.labbaye.ch"
+    },
+    {
+        "name": "L'Abergement",
+        "ofs": 5741,
+        "postalCode": 1355,
+        "websiteUrl": "https://www.labergement.ch"
+    },
+    {
+        "name": "Lausanne",
+        "ofs": 5586,
+        "postalCode": 1003,
+        "websiteUrl": "https://www.lausanne.ch"
+    },
+    {
+        "name": "Lavey-Morcles",
+        "ofs": 5406,
+        "postalCode": 1892,
+        "websiteUrl": "https://lavey.ch"
+    },
+    {
+        "name": "Lavigny",
+        "ofs": 5637,
+        "postalCode": 1175,
+        "websiteUrl": "https://www.lavigny.ch"
+    },
+    {
+        "name": "Le Chenit",
+        "ofs": 5872,
+        "postalCode": 1347,
+        "websiteUrl": "https://www.communeduchenit.ch"
+    },
+    {
+        "name": "Le Lieu",
+        "ofs": 5873,
+        "postalCode": 1345,
+        "websiteUrl": "https://www.lelieu.ch"
+    },
+    {
+        "name": "Le Mont-sur-Lausanne",
+        "ofs": 5587,
+        "postalCode": 1052,
+        "websiteUrl": "https://www.lemontsurlausanne.ch"
+    },
+    {
+        "name": "Le Vaud",
+        "ofs": 5731,
+        "postalCode": 1261,
+        "websiteUrl": "https://www.levaud.ch"
+    },
+    {
+        "name": "Les Clées",
+        "ofs": 5750,
+        "postalCode": 1356,
+        "websiteUrl": "https://www.lesclees.ch"
+    },
+    {
+        "name": "Leysin",
+        "ofs": 5407,
+        "postalCode": 1854,
+        "websiteUrl": "https://www.leysin.ch"
+    },
+    {
+        "name": "Lignerolle",
+        "ofs": 5755,
+        "postalCode": 1357,
+        "websiteUrl": "https://www.lignerolle.ch"
+    },
+    {
+        "name": "L'Isle",
+        "ofs": 5486,
+        "postalCode": 1148,
+        "websiteUrl": "https://www.lisle.ch"
+    },
+    {
+        "name": "Lonay",
+        "ofs": 5638,
+        "postalCode": 1027,
+        "websiteUrl": "https://www.lonay.ch"
+    },
+    {
+        "name": "Longirod",
+        "ofs": 5429,
+        "postalCode": 1261,
+        "websiteUrl": "https://www.longirod.ch"
+    },
+    {
+        "name": "Lovatens",
+        "ofs": 5674,
+        "postalCode": 1682,
+        "websiteUrl": "https://www.lovatens.ch"
+    },
+    {
+        "name": "Lucens",
+        "ofs": 5675,
+        "postalCode": 1522,
+        "websiteUrl": "https://www.lucens.ch"
+    },
+    {
+        "name": "Luins",
+        "ofs": 5858,
+        "postalCode": 1184,
+        "websiteUrl": "https://www.luins.ch"
+    },
+    {
+        "name": "Lully",
+        "ofs": 5639,
+        "postalCode": 1132,
+        "websiteUrl": "https://www.lully.ch"
+    },
+    {
+        "name": "Lussery-Villars",
+        "ofs": 5487,
+        "postalCode": 1307,
+        "websiteUrl": "https://www.lussery-villars.ch"
+    },
+    {
+        "name": "Lussy-sur-Morges",
+        "ofs": 5640,
+        "postalCode": 1167,
+        "websiteUrl": "https://www.lussy-sur-morges.ch"
+    },
+    {
+        "name": "Lutry",
+        "ofs": 5606,
+        "postalCode": 1095,
+        "websiteUrl": "https://www.lutry.ch"
+    },
+    {
+        "name": "Maracon",
+        "ofs": 5790,
+        "postalCode": 1613,
+        "websiteUrl": "https://www.maracon.ch"
+    },
+    {
+        "name": "Marchissy",
+        "ofs": 5430,
+        "postalCode": 1261,
+        "websiteUrl": "https://www.marchissy.ch"
+    },
+    {
+        "name": "Mathod",
+        "ofs": 5919,
+        "postalCode": 1438,
+        "websiteUrl": "https://www.mathod.ch"
+    },
+    {
+        "name": "Mauborget",
+        "ofs": 5562,
+        "postalCode": 1453,
+        "websiteUrl": "https://www.mauborget.ch"
+    },
+    {
+        "name": "Mauraz",
+        "ofs": 5488,
+        "postalCode": 1148,
+        "websiteUrl": "http://www.mauraz.ch/"
+    },
+    {
+        "name": "Mex",
+        "ofs": 5489,
+        "postalCode": 1031,
+        "websiteUrl": "https://www.mex.ch"
+    },
+    {
+        "name": "Mies",
+        "ofs": 5723,
+        "postalCode": 1295,
+        "websiteUrl": "https://www.mies.ch"
+    },
+    {
+        "name": "Missy",
+        "ofs": 5821,
+        "postalCode": 1565,
+        "websiteUrl": "https://www.missy.ch"
+    },
+    {
+        "name": "Moiry",
+        "ofs": 5490,
+        "postalCode": 1148,
+        "websiteUrl": "https://www.moiry.ch"
+    },
+    {
+        "name": "Mollens",
+        "ofs": 5431,
+        "postalCode": 1146,
+        "websiteUrl": "https://www.mollensvd.ch"
+    },
+    {
+        "name": "Molondin",
+        "ofs": 5921,
+        "postalCode": 1415,
+        "websiteUrl": "https://www.molondin.ch"
+    },
+    {
+        "name": "Montagny-près-Yverdon",
+        "ofs": 5922,
+        "postalCode": 1442,
+        "websiteUrl": "https://www.montagny.ch"
+    },
+    {
+        "name": "Montanaire",
+        "ofs": 5693,
+        "postalCode": 1410,
+        "websiteUrl": "https://www.montanaire.ch"
+    },
+    {
+        "name": "Montcherand",
+        "ofs": 5756,
+        "postalCode": 1354,
+        "websiteUrl": "https://www.montcherand.ch"
+    },
+    {
+        "name": "Montilliez",
+        "ofs": 5540,
+        "postalCode": 1041,
+        "websiteUrl": "https://www.montilliez.ch"
+    },
+    {
+        "name": "Mont-la-Ville",
+        "ofs": 5491,
+        "postalCode": 1148,
+        "websiteUrl": "https://www.mont-la-ville.ch"
+    },
+    {
+        "name": "Mont-sur-Rolle",
+        "ofs": 5859,
+        "postalCode": 1185,
+        "websiteUrl": "https://www.mont-sur-rolle.ch"
+    },
+    {
+        "name": "Montpreveyres",
+        "ofs": 5792,
+        "postalCode": 1081,
+        "websiteUrl": "https://www.montpreveyres.ch"
+    },
+    {
+        "name": "Montreux",
+        "ofs": 5886,
+        "postalCode": 1820,
+        "websiteUrl": "https://www.montreux.ch"
+    },
+    {
+        "name": "Montricher",
+        "ofs": 5492,
+        "postalCode": 1147,
+        "websiteUrl": "https://www.montricher.ch"
+    },
+    {
+        "name": "Morges",
+        "ofs": 5642,
+        "postalCode": 1110,
+        "websiteUrl": "https://www.morges.ch"
+    },
+    {
+        "name": "Morrens",
+        "ofs": 5527,
+        "postalCode": 1054,
+        "websiteUrl": "https://www.morrens.ch"
+    },
+    {
+        "name": "Moudon",
+        "ofs": 5678,
+        "postalCode": 1510,
+        "websiteUrl": "https://www.moudon.ch"
+    },
+    {
+        "name": "Mutrux",
+        "ofs": 5563,
+        "postalCode": 1428,
+        "websiteUrl": "https://mutrux.swiss/"
+    },
+    {
+        "name": "Novalles",
+        "ofs": 5564,
+        "postalCode": 1431,
+        "websiteUrl": "https://www.novalles.ch"
+    },
+    {
+        "name": "Noville",
+        "ofs": 5408,
+        "postalCode": 1845,
+        "websiteUrl": "https://www.noville.ch"
+    },
+    {
+        "name": "Nyon",
+        "ofs": 5724,
+        "postalCode": 1260,
+        "websiteUrl": "https://www.nyon.ch"
+    },
+    {
+        "name": "Ogens",
+        "ofs": 5680,
+        "postalCode": 1045,
+        "websiteUrl": "https://www.ogens.ch"
+    },
+    {
+        "name": "Ollon",
+        "ofs": 5409,
+        "postalCode": 1867,
+        "websiteUrl": "https://www.ollon.ch"
+    },
+    {
+        "name": "Onnens",
+        "ofs": 5565,
+        "postalCode": 1425,
+        "websiteUrl": "https://onnens.ch"
+    },
+    {
+        "name": "Oppens",
+        "ofs": 5923,
+        "postalCode": 1047,
+        "websiteUrl": "https://www.oppens.ch"
+    },
+    {
+        "name": "Orbe",
+        "ofs": 5757,
+        "postalCode": 1350,
+        "websiteUrl": "https://www.orbe.ch"
+    },
+    {
+        "name": "Orges",
+        "ofs": 5924,
+        "postalCode": 1430,
+        "websiteUrl": "https://www.orges.ch"
+    },
+    {
+        "name": "Ormont-Dessous",
+        "ofs": 5410,
+        "postalCode": 1862,
+        "websiteUrl": "https://www.ormont-dessous.ch"
+    },
+    {
+        "name": "Ormont-Dessus",
+        "ofs": 5411,
+        "postalCode": 1865,
+        "websiteUrl": "https://www.ormont-dessus.ch"
+    },
+    {
+        "name": "Orny",
+        "ofs": 5493,
+        "postalCode": 1317,
+        "websiteUrl": "https://www.orny.ch"
+    },
+    {
+        "name": "Oron",
+        "ofs": 5805,
+        "postalCode": 1610,
+        "websiteUrl": "https://www.oron.ch"
+    },
+    {
+        "name": "Orzens",
+        "ofs": 5925,
+        "postalCode": 1413,
+        "websiteUrl": "https://www.orzens.ch"
+    },
+    {
+        "name": "Oulens-sous-Échallens",
+        "ofs": 5529,
+        "postalCode": 1377,
+        "websiteUrl": "https://www.oulens.ch"
+    },
+    {
+        "name": "Pailly",
+        "ofs": 5530,
+        "postalCode": 1416,
+        "websiteUrl": "https://www.pailly.ch"
+    },
+    {
+        "name": "Paudex",
+        "ofs": 5588,
+        "postalCode": 1094,
+        "websiteUrl": "https://www.paudex.ch"
+    },
+    {
+        "name": "Payerne",
+        "ofs": 5822,
+        "postalCode": 1530,
+        "websiteUrl": "https://www.payerne.ch"
+    },
+    {
+        "name": "Penthalaz",
+        "ofs": 5495,
+        "postalCode": 1305,
+        "websiteUrl": "https://www.penthalaz.ch"
+    },
+    {
+        "name": "Penthaz",
+        "ofs": 5496,
+        "postalCode": 1303,
+        "websiteUrl": "https://www.penthaz.ch"
+    },
+    {
+        "name": "Penthéréaz",
+        "ofs": 5531,
+        "postalCode": 1375,
+        "websiteUrl": "https://www.penthereaz.ch"
+    },
+    {
+        "name": "Perroy",
+        "ofs": 5860,
+        "postalCode": 1166,
+        "websiteUrl": "https://www.perroy.ch"
+    },
+    {
+        "name": "Poliez-Pittet",
+        "ofs": 5533,
+        "postalCode": 1041,
+        "websiteUrl": "https://www.poliez-pittet.ch"
+    },
+    {
+        "name": "Pompaples",
+        "ofs": 5497,
+        "postalCode": 1318,
+        "websiteUrl": "https://www.pompaples.ch"
+    },
+    {
+        "name": "Pomy",
+        "ofs": 5926,
+        "postalCode": 1405,
+        "websiteUrl": "https://www.pomy.ch"
+    },
+    {
+        "name": "Prangins",
+        "ofs": 5725,
+        "postalCode": 1197,
+        "websiteUrl": "https://www.prangins.ch"
+    },
+    {
+        "name": "Premier",
+        "ofs": 5759,
+        "postalCode": 1324,
+        "websiteUrl": "https://www.premier.ch"
+    },
+    {
+        "name": "Préverenges",
+        "ofs": 5643,
+        "postalCode": 1028,
+        "websiteUrl": "https://www.preverenges.ch"
+    },
+    {
+        "name": "Prévonloup",
+        "ofs": 5683,
+        "postalCode": 1682,
+        "websiteUrl": "https://www.prevonloup.ch"
+    },
+    {
+        "name": "Prilly",
+        "ofs": 5589,
+        "postalCode": 1008,
+        "websiteUrl": "https://www.prilly.ch"
+    },
+    {
+        "name": "Provence",
+        "ofs": 5566,
+        "postalCode": 1428,
+        "websiteUrl": "https://www.provence.ch"
+    },
+    {
+        "name": "Puidoux",
+        "ofs": 5607,
+        "postalCode": 1070,
+        "websiteUrl": "https://www.puidoux.ch"
+    },
+    {
+        "name": "Pully",
+        "ofs": 5590,
+        "postalCode": 1009,
+        "websiteUrl": "https://www.pully.ch"
+    },
+    {
+        "name": "Rances",
+        "ofs": 5760,
+        "postalCode": 1439,
+        "websiteUrl": "https://www.rances.ch"
+    },
+    {
+        "name": "Renens",
+        "ofs": 5591,
+        "postalCode": 1020,
+        "websiteUrl": "https://www.renens.ch"
+    },
+    {
+        "name": "Rennaz",
+        "ofs": 5412,
+        "postalCode": 1847,
+        "websiteUrl": "https://www.rennaz.ch"
+    },
+    {
+        "name": "Rivaz",
+        "ofs": 5609,
+        "postalCode": 1071,
+        "websiteUrl": "https://www.rivaz.ch"
+    },
+    {
+        "name": "Roche",
+        "ofs": 5413,
+        "postalCode": 1852,
+        "websiteUrl": "https://www.roche.ch/fr/home"
+    },
+    {
+        "name": "Rolle",
+        "ofs": 5861,
+        "postalCode": 1180,
+        "websiteUrl": "https://www.rolle.ch"
+    },
+    {
+        "name": "Romainmôtier-Envy",
+        "ofs": 5761,
+        "postalCode": 1323,
+        "websiteUrl": "https://romainmotier.ch"
+    },
+    {
+        "name": "Romanel-sur-Lausanne",
+        "ofs": 5592,
+        "postalCode": 1032,
+        "websiteUrl": "https://www.romanel-sur-lausanne.ch"
+    },
+    {
+        "name": "Romanel-sur-Morges",
+        "ofs": 5645,
+        "postalCode": 1122,
+        "websiteUrl": "https://www.romanel-sur-morges.ch"
+    },
+    {
+        "name": "Ropraz",
+        "ofs": 5798,
+        "postalCode": 1088,
+        "websiteUrl": "https://www.ropraz.ch"
+    },
+    {
+        "name": "Rossenges",
+        "ofs": 5684,
+        "postalCode": 1513,
+        "websiteUrl": "https://www.rossenges.ch"
+    },
+    {
+        "name": "Rossinière",
+        "ofs": 5842,
+        "postalCode": 1658,
+        "websiteUrl": "https://www.rossiniere.ch"
+    },
+    {
+        "name": "Rougemont",
+        "ofs": 5843,
+        "postalCode": 1659,
+        "websiteUrl": "https://www.rougemont.ch"
+    },
+    {
+        "name": "Rovray",
+        "ofs": 5928,
+        "postalCode": 1465,
+        "websiteUrl": "https://www.rovray.ch"
+    },
+    {
+        "name": "Rueyres",
+        "ofs": 5534,
+        "postalCode": 1046,
+        "websiteUrl": "https://www.rueyres.ch"
+    },
+    {
+        "name": "Saint-Barthélemy",
+        "ofs": 5535,
+        "postalCode": 1040,
+        "websiteUrl": "https://www.st-barthelemy.ch"
+    },
+    {
+        "name": "Saint-Cergue",
+        "ofs": 5727,
+        "postalCode": 1264,
+        "websiteUrl": "https://www.st-cergue.ch"
+    },
+    {
+        "name": "Saint-George",
+        "ofs": 5434,
+        "postalCode": 1188,
+        "websiteUrl": "https://www.st-george.ch"
+    },
+    {
+        "name": "Saint-Livres",
+        "ofs": 5435,
+        "postalCode": 1176,
+        "websiteUrl": "https://www.st-livres.ch"
+    },
+    {
+        "name": "Saint-Oyens",
+        "ofs": 5436,
+        "postalCode": 1187,
+        "websiteUrl": "https://www.saint-oyens.ch"
+    },
+    {
+        "name": "Saint-Prex",
+        "ofs": 5646,
+        "postalCode": 1162,
+        "websiteUrl": "https://www.st-prex.ch"
+    },
+    {
+        "name": "Saint-Saphorin",
+        "ofs": 5610,
+        "postalCode": 1071,
+        "websiteUrl": "http://www.saint-saphorin.ch"
+    },
+    {
+        "name": "Saint-Sulpice",
+        "ofs": 5648,
+        "postalCode": 1025,
+        "websiteUrl": "https://www.st-sulpice.ch"
+    },
+    {
+        "name": "Sainte-Croix",
+        "ofs": 5568,
+        "postalCode": 1450,
+        "websiteUrl": "https://www.ste-croix.ch"
+    },
+    {
+        "name": "Saubraz",
+        "ofs": 5437,
+        "postalCode": 1189,
+        "websiteUrl": "https://www.saubraz.ch"
+    },
+    {
+        "name": "Savigny",
+        "ofs": 5611,
+        "postalCode": 1073,
+        "websiteUrl": "https://www.savigny.ch"
+    },
+    {
+        "name": "Senarclens",
+        "ofs": 5499,
+        "postalCode": 1304,
+        "websiteUrl": "https://www.senarclens.ch"
+    },
+    {
+        "name": "Sergey",
+        "ofs": 5762,
+        "postalCode": 1355,
+        "websiteUrl": "https://www.sergey.ch"
+    },
+    {
+        "name": "Servion",
+        "ofs": 5799,
+        "postalCode": 1077,
+        "websiteUrl": "https://www.servion.ch"
+    },
+    {
+        "name": "Signy-Avenex",
+        "ofs": 5728,
+        "postalCode": 1274,
+        "websiteUrl": "https://www.signy.ch"
+    },
+    {
+        "name": "Suchy",
+        "ofs": 5929,
+        "postalCode": 1433,
+        "websiteUrl": "https://www.suchy.ch"
+    },
+    {
+        "name": "Sullens",
+        "ofs": 5501,
+        "postalCode": 1036,
+        "websiteUrl": "https://www.sullens.ch"
+    },
+    {
+        "name": "Suscévaz",
+        "ofs": 5930,
+        "postalCode": 1437,
+        "websiteUrl": "https://www.suscevaz.ch"
+    },
+    {
+        "name": "Syens",
+        "ofs": 5688,
+        "postalCode": 1510,
+        "websiteUrl": "https://www.syens.ch"
+    },
+    {
+        "name": "Tannay",
+        "ofs": 5729,
+        "postalCode": 1295,
+        "websiteUrl": "https://www.tannay.ch"
+    },
+    {
+        "name": "Tartegnin",
+        "ofs": 5862,
+        "postalCode": 1180,
+        "websiteUrl": "https://www.tartegnin.ch"
+    },
+    {
+        "name": "Tévenon",
+        "ofs": 5571,
+        "postalCode": 1423,
+        "websiteUrl": "https://www.tevenon.ch"
+    },
+    {
+        "name": "Tolochenaz",
+        "ofs": 5649,
+        "postalCode": 1131,
+        "websiteUrl": "https://www.tolochenaz.ch"
+    },
+    {
+        "name": "Trélex",
+        "ofs": 5730,
+        "postalCode": 1270,
+        "websiteUrl": "https://www.trelex.ch"
+    },
+    {
+        "name": "Trey",
+        "ofs": 5827,
+        "postalCode": 1552,
+        "websiteUrl": "https://www.trey.ch"
+    },
+    {
+        "name": "Treycovagnes",
+        "ofs": 5931,
+        "postalCode": 1436,
+        "websiteUrl": "https://www.treycovagnes.ch"
+    },
+    {
+        "name": "Treytorrens",
+        "ofs": 5828,
+        "postalCode": 1538,
+        "websiteUrl": "https://www.treytorrens.ch"
+    },
+    {
+        "name": "Ursins",
+        "ofs": 5932,
+        "postalCode": 1419,
+        "websiteUrl": "https://www.ursins.ch"
+    },
+    {
+        "name": "Valbroye",
+        "ofs": 5831,
+        "postalCode": 1536,
+        "websiteUrl": "https://www.valbroye.ch"
+    },
+    {
+        "name": "Valeyres-sous-Montagny",
+        "ofs": 5933,
+        "postalCode": 1441,
+        "websiteUrl": "https://www.valeyres-sous-montagny.ch"
+    },
+    {
+        "name": "Valeyres-sous-Rances",
+        "ofs": 5763,
+        "postalCode": 1358,
+        "websiteUrl": "https://www.valeyres-sous-rances.ch"
+    },
+    {
+        "name": "Valeyres-sous-Ursins",
+        "ofs": 5934,
+        "postalCode": 1412,
+        "websiteUrl": "https://www.valeyres-sous-ursins.ch"
+    },
+    {
+        "name": "Vallorbe",
+        "ofs": 5764,
+        "postalCode": 1337,
+        "websiteUrl": "https://www.vallorbe.ch"
+    },
+    {
+        "name": "Vaulion",
+        "ofs": 5765,
+        "postalCode": 1325,
+        "websiteUrl": "https://www.vaulion.ch"
+    },
+    {
+        "name": "Vaux-sur-Morges",
+        "ofs": 5650,
+        "postalCode": 1126,
+        "websiteUrl": "https://www.vaux-sur-morges.ch"
+    },
+    {
+        "name": "Vevey",
+        "ofs": 5890,
+        "postalCode": 1800,
+        "websiteUrl": "https://www.vevey.ch"
+    },
+    {
+        "name": "Veytaux",
+        "ofs": 5891,
+        "postalCode": 1820,
+        "websiteUrl": "https://www.veytaux.ch"
+    },
+    {
+        "name": "Vich",
+        "ofs": 5732,
+        "postalCode": 1267,
+        "websiteUrl": "https://www.vich.ch"
+    },
+    {
+        "name": "Villars-Épeney",
+        "ofs": 5935,
+        "postalCode": 1443,
+        "websiteUrl": "https://www.villars-epeney.ch"
+    },
+    {
+        "name": "Villars-le-Comte",
+        "ofs": 5690,
+        "postalCode": 1515,
+        "websiteUrl": "https://www.villars-le-comte.ch"
+    },
+    {
+        "name": "Villars-le-Terroir",
+        "ofs": 5537,
+        "postalCode": 1046,
+        "websiteUrl": "https://www.villars-le-terroir.ch"
+    },
+    {
+        "name": "Villars-Sainte-Croix",
+        "ofs": 5651,
+        "postalCode": 1029,
+        "websiteUrl": "https://www.villars-sainte-croix.ch"
+    },
+    {
+        "name": "Villars-sous-Yens",
+        "ofs": 5652,
+        "postalCode": 1168,
+        "websiteUrl": "https://www.villars-sous-yens.ch"
+    },
+    {
+        "name": "Villarzel",
+        "ofs": 5830,
+        "postalCode": 1555,
+        "websiteUrl": "https://www.villarzel.ch"
+    },
+    {
+        "name": "Villeneuve",
+        "ofs": 5414,
+        "postalCode": 1844,
+        "websiteUrl": "https://www.villeneuve.ch"
+    },
+    {
+        "name": "Vinzel",
+        "ofs": 5863,
+        "postalCode": 1184,
+        "websiteUrl": "https://www.vinzel.ch"
+    },
+    {
+        "name": "Vuarrens",
+        "ofs": 5539,
+        "postalCode": 1418,
+        "websiteUrl": "https://www.vuarrens.ch"
+    },
+    {
+        "name": "Vucherens",
+        "ofs": 5692,
+        "postalCode": 1509,
+        "websiteUrl": "https://www.vucherens.ch"
+    },
+    {
+        "name": "Vufflens-la-Ville",
+        "ofs": 5503,
+        "postalCode": 1302,
+        "websiteUrl": "https://www.vufflens-la-ville.ch"
+    },
+    {
+        "name": "Vufflens-le-Château",
+        "ofs": 5653,
+        "postalCode": 1134,
+        "websiteUrl": "https://www.vufflens-le-chateau.ch"
+    },
+    {
+        "name": "Vugelles-La Mothe",
+        "ofs": 5937,
+        "postalCode": 1431,
+        "websiteUrl": "https://vugelleslamothe.ch"
+    },
+    {
+        "name": "Vuitebœuf",
+        "ofs": 5766,
+        "postalCode": 1445,
+        "websiteUrl": "https://www.vuiteboeuf.ch"
+    },
+    {
+        "name": "Vulliens",
+        "ofs": 5803,
+        "postalCode": 1085,
+        "websiteUrl": "https://www.vulliens.ch"
+    },
+    {
+        "name": "Vullierens",
+        "ofs": 5654,
+        "postalCode": 1115,
+        "websiteUrl": "https://www.vullierens.ch"
+    },
+    {
+        "name": "Vully-les-Lacs",
+        "ofs": 5464,
+        "postalCode": 1585,
+        "websiteUrl": "https://www.vully-les-lacs.ch"
+    },
+    {
+        "name": "Yens",
+        "ofs": 5655,
+        "postalCode": 1169,
+        "websiteUrl": "https://www.yens.ch"
+    },
+    {
+        "name": "Yverdon-les-Bains",
+        "ofs": 5938,
+        "postalCode": 1400,
+        "websiteUrl": "https://www.yverdon-les-bains.ch"
+    },
+    {
+        "name": "Yvonand",
+        "ofs": 5939,
+        "postalCode": 1462,
+        "websiteUrl": "https://www.yvonand.ch"
+    },
+    {
+        "name": "Yvorne",
+        "ofs": 5415,
+        "postalCode": 1853,
+        "websiteUrl": "https://www.yvorne.ch"
+    }
+]
