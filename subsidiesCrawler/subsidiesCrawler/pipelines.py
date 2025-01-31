@@ -8,6 +8,7 @@
 from itemadapter import ItemAdapter
 
 
-class SubsidiescrawlerPipeline:
+class SubsidiesCrawlerPipeline:
     def process_item(self, item, spider):
+        # Si vous avez besoin de traiter l'item, faites-le ici
         return item
