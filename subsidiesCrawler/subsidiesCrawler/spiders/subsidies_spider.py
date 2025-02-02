@@ -71,11 +71,19 @@ class SubsidiesSpiderSpider(scrapy.Spider):
         score, keywords_found = self.calculate_score(response)
         if score > 0:
             self.logger.info(f"[{commune_name}] Page pertinente (score {score}) : {response.url}")
+            
+            # Extraire le contenu des balises de texte
+            text_elements = response.css('p::text, h1::text, h2::text, h3::text, h4::text, h5::text, h6::text, li::text, span::text, div::text').getall()
+            # Nettoyer le contenu pour supprimer les espaces blancs et les lignes vides
+            content = "\n".join(line.strip() for line in text_elements if line.strip())
+
             result = {
                 "url": response.url,
                 "score": score,
-                "keywords_found": keywords_found
+                "keywords_found": keywords_found,
+                "content": content
             }
+            
             # Stocker temporairement les résultats
             self.results.setdefault(commune_name, []).append(result)
 
