@@ -43,20 +43,28 @@ class SubsidiesSpiderSpider(scrapy.Spider):
                 # Garde le nom de la commune pour le suivi
                 self.communes_list.append(commune_name)
                 
-                # Définir allowed_domains dynamiquement (optionnel, Scrapy ne le gère pas toujours comme on l'imagine)
-                domain = urlparse(url).netloc
+                # Définir allowed_domains dynamiquement pour inclure la variante avec et sans "www"
+                domain = urlparse(url).netloc.lower().split(':')[0]
                 if domain:
-                    # Ajoute si besoin au self.allowed_domains
+                    if domain.startswith("www."):
+                        domain_naked = domain[4:]
+                        variants = [domain, domain_naked]
+                    else:
+                        domain_with_www = "www." + domain
+                        variants = [domain, domain_with_www]
+
                     if not hasattr(self, 'allowed_domains'):
                         self.allowed_domains = []
-                    self.allowed_domains.append(domain)
+                    for d in variants:
+                        if d not in self.allowed_domains:
+                            self.allowed_domains.append(d)
                 
-                yield scrapy.Request(
-                    url=url,
-                    callback=self.parse,
-                    meta={"commune_name": commune_name, "depth": 0},
-                    errback=self.errback
-                )
+            yield scrapy.Request(
+                url=url,
+                callback=self.parse,
+                meta={"commune_name": commune_name, "depth": 0},
+                errback=self.errback
+            )
 
     def parse(self, response):
         commune_name = response.meta["commune_name"]
@@ -66,6 +74,12 @@ class SubsidiesSpiderSpider(scrapy.Spider):
         if response.url in self.visited_urls:
             return
         self.visited_urls.add(response.url)
+
+        # Si le contenu n'est pas textuel (ex. PDF), on ignore le traitement de la page
+        content_type = response.headers.get('Content-Type', b'').decode('utf-8')
+        if "text" not in content_type:
+            self.logger.debug(f"Contenu non-textuel détecté dans parse, ignorer le traitement pour: {response.url} (Content-Type: {content_type})")
+            return
 
         # Calcul du score pour la page
         score, keywords_found = self.calculate_score(response)
@@ -100,8 +114,8 @@ class SubsidiesSpiderSpider(scrapy.Spider):
         else:
             self.logger.debug(f"[{commune_name}] Page NON pertinente (score 0) : {response.url}")
 
-        # Limite la profondeur à 1
-        if current_depth < 1:
+        # Limite la profondeur à 3 (modifiable selon les besoins)
+        if current_depth < 2:
             # Suivre les liens internes
             for href in response.css('a::attr(href)').getall():
                 next_page = response.urljoin(href)
@@ -120,6 +134,12 @@ class SubsidiesSpiderSpider(scrapy.Spider):
         dans l'URL, les titres et le contenu.
         Retourne (score, liste_des_mots_clés_trouvés).
         """
+        # Vérifie que le contenu de la réponse est textuel
+        content_type = response.headers.get('Content-Type', b'').decode('utf-8')
+        if "text" not in content_type:
+            self.logger.debug(f"Contenu non-textuel détecté, ignorer le traitement pour: {response.url} (Content-Type: {content_type})")
+            return 0, []
+
         score = 0
         keywords_found = []
 

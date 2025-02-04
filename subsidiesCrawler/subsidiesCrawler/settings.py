@@ -92,7 +92,7 @@ REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
 
-# Limite la profondeur du crawl à 3
-DEPTH_LIMIT = 3
+# Limite la profondeur du crawl à 10
+DEPTH_LIMIT = 0
 
 LOG_LEVEL = 'DEBUG'
