@@ -44,7 +44,7 @@ class SubsidiesSpiderSpider(scrapy.Spider):
     def start_requests(self):
         # Charger les données JSON
         json_path = self.settings.get("VAUD_COMMUNES_FILE", "") or \
-                    "subsidiesCrawler/subsidiesInfoJSON/InclompleteInfoSubsidies.json"
+                    "/root/SubsidiesCrawler/subsidiesCrawler/subsidiesInfoJSON/InclompleteInfoSubsidies.json"
 
         with open(json_path, 'r', encoding='utf-8') as file:
             communes = json.load(file)
