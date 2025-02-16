@@ -2,19 +2,26 @@ import scrapy
 import json
 import os
 from urllib.parse import urlparse
+import re
 
 class SubsidiesSpiderSpider(scrapy.Spider):
     name = "subsidies_spider"
     
-    # Configuration des mots-clés et de leurs poids
-    url_keywords = ["energie", "developpement-durable", "subventions"]
+    # Configuration des mots-clés mise à jour
     title_keywords = {
-        "subventions": 5,
-        "photovoltaïque": 5
+        "photovoltaïque": 1,
+        "photovoltaïques": 1,
+        "photovoltaic": 1,
+        "subvention": 1,
+        "subventions": 1,
+        "commune": 1,
+        "communes": 1,
+        "communal": 1
     }
     content_keywords = [
-        "installation", "photovoltaïque",
-        "consommation", "subvention", "chf", "pronovo"
+        "photovoltaïque", "photovoltaïques", "photovoltaic",
+        "subvention", "subventions",
+        "commune", "communes", "communal"
     ]
 
     def __init__(self, *args, **kwargs):
@@ -30,14 +37,16 @@ class SubsidiesSpiderSpider(scrapy.Spider):
     def start_requests(self):
         # Charger les données JSON
         json_path = self.settings.get("VAUD_COMMUNES_FILE", "") or \
-                    "/Users/saddamsatouyev/SubsidiesCrawler/subsidiesCrawler/test.json"
+                    "/Users/saddamsatouyev/SubsidiesCrawler/subsidiesCrawler/subsidiesInfoJSON/InclompleteInfoSubsidies.json"
 
         with open(json_path, 'r', encoding='utf-8') as file:
             communes = json.load(file)
 
         for commune in communes:
             commune_name = commune.get('name')
-            url = commune.get('websiteUrl')
+            url = commune.get('sourceUrl')
+            ofs = commune.get('ofs')  # Récupérer l'identifiant OFS
+            postal_code = commune.get('postalCode')  # Récupérer le code postal
             
             if commune_name and url:
                 # Garde le nom de la commune pour le suivi
@@ -59,16 +68,18 @@ class SubsidiesSpiderSpider(scrapy.Spider):
                         if d not in self.allowed_domains:
                             self.allowed_domains.append(d)
                 
-            yield scrapy.Request(
-                url=url,
-                callback=self.parse,
-                meta={"commune_name": commune_name, "depth": 0},
-                errback=self.errback
-            )
+                yield scrapy.Request(
+                    url=url,
+                    callback=self.parse,
+                    meta={"commune_name": commune_name, "depth": 0, "ofs": ofs, "postal_code": postal_code},
+                    errback=self.errback
+                )
 
     def parse(self, response):
         commune_name = response.meta["commune_name"]
         current_depth = response.meta["depth"]
+        ofs = response.meta["ofs"]
+        postal_code = response.meta["postal_code"]
 
         # Évite de revisiter la même URL
         if response.url in self.visited_urls:
@@ -81,38 +92,29 @@ class SubsidiesSpiderSpider(scrapy.Spider):
             self.logger.debug(f"Contenu non-textuel détecté dans parse, ignorer le traitement pour: {response.url} (Content-Type: {content_type})")
             return
 
-        # Calcul du score pour la page
-        score, keywords_found = self.calculate_score(response)
-        if score > 0:
-            self.logger.info(f"[{commune_name}] Page pertinente (score {score}) : {response.url}")
+        # Vérification de la présence des mots-clés
+        relevant_text = self.find_keywords(response)
+        if relevant_text:
+            self.logger.info(f"[{commune_name}] Page pertinente : {response.url}")
             
-            # Extraire le contenu des balises de texte
-            text_elements = response.css('p::text, h1::text, h2::text, h3::text, h4::text, h5::text, h6::text, li::text, span::text, div::text').getall()
-            # Nettoyer le contenu pour supprimer les espaces blancs et les lignes vides
-            content = "\n".join(line.strip() for line in text_elements if line.strip())
-
             result = {
                 "url": response.url,
-                "score": score,
-                "keywords_found": keywords_found,
-                "content": content
+                "content": relevant_text,
+                "ofs": ofs,  # Ajouter l'identifiant OFS
+                "postal_code": postal_code  # Ajouter le code postal
             }
             
-            # Stocker temporairement les résultats
+            # Stocker tous les résultats
             self.results.setdefault(commune_name, []).append(result)
-
-            # Trier et garder les trois meilleurs résultats
-            self.results[commune_name].sort(key=lambda x: x['score'], reverse=True)
-            top_pages = self.results[commune_name][:3]
 
             # Écrire immédiatement dans le fichier JSON
             file_name = f"{commune_name}.json"
             file_path = os.path.join(self.output_dir, file_name)
             with open(file_path, 'w', encoding='utf-8') as f:
-                json.dump(top_pages, f, ensure_ascii=False, indent=2)
-            self.logger.info(f"[{commune_name}] => {file_name} mis à jour ({len(top_pages)} pages pertinentes).")
+                json.dump(self.results[commune_name], f, ensure_ascii=False, indent=2)
+            self.logger.info(f"[{commune_name}] => {file_name} mis à jour ({len(self.results[commune_name])} pages pertinentes).")
         else:
-            self.logger.debug(f"[{commune_name}] Page NON pertinente (score 0) : {response.url}")
+            self.logger.debug(f"[{commune_name}] Page NON pertinente : {response.url}")
 
         # Limite la profondeur à 3 (modifiable selon les besoins)
         if current_depth < 2:
@@ -124,48 +126,70 @@ class SubsidiesSpiderSpider(scrapy.Spider):
                     yield scrapy.Request(
                         next_page,
                         callback=self.parse,
-                        meta={"commune_name": commune_name, "depth": current_depth + 1},
+                        meta={"commune_name": commune_name, "depth": current_depth + 1, "ofs": ofs, "postal_code": postal_code},
                         errback=self.errback
                     )
 
-    def calculate_score(self, response):
+    def find_keywords(self, response):
         """
-        Calcule un score en fonction de la présence de certains mots-clés
-        dans l'URL, les titres et le contenu.
-        Retourne (score, liste_des_mots_clés_trouvés).
+        Vérifie la présence des catégories de mots-clés dans les titres et le contenu.
+        Retourne True si toutes les catégories de mots-clés sont trouvées, sinon False.
         """
-        # Vérifie que le contenu de la réponse est textuel
-        content_type = response.headers.get('Content-Type', b'').decode('utf-8')
-        if "text" not in content_type:
-            self.logger.debug(f"Contenu non-textuel détecté, ignorer le traitement pour: {response.url} (Content-Type: {content_type})")
-            return 0, []
-
-        score = 0
-        keywords_found = []
-
-        # 1) Mots-clés dans l'URL
-        url_lower = response.url.lower()
-        for keyword in self.url_keywords:
-            if keyword in url_lower:
-                score += 5
-                keywords_found.append(f"URL:{keyword}")
-
-        # 2) Mots-clés dans les titres
+        # Mots-clés dans les titres
         titles_text = " ".join(response.css('h1::text, h2::text, h3::text, h4::text, h5::text, h6::text').getall()).lower()
-        for keyword, weight in self.title_keywords.items():
-            if keyword in titles_text:
-                score += weight
-                keywords_found.append(f"TITLE:{keyword}")
 
-        # 3) Mots-clés dans le texte global
+        # Mots-clés dans le texte global
         text_elements = response.css('::text').getall()
         text_content = " ".join(text_elements).lower()
-        for keyword in self.content_keywords:
-            if keyword in text_content:
-                score += 0.5
-                keywords_found.append(f"CONTENT:{keyword}")
 
-        return score, keywords_found
+        # Vérifier la présence de chaque catégorie de mots-clés
+        photovoltaic_keywords = ["photovoltaïque", "photovoltaïques", "photovoltaic"]
+        communal_keywords = ["commune", "communes", "communal"]
+        subsidy_keywords = ["subvention", "subventions"]
+
+        photovoltaic_found = any(keyword in titles_text or keyword in text_content for keyword in photovoltaic_keywords)
+        communal_found = any(keyword in titles_text or keyword in text_content for keyword in communal_keywords)
+        subsidy_found = any(keyword in titles_text or keyword in text_content for keyword in subsidy_keywords)
+
+        # Si tous les mots-clés sont trouvés, extraire le texte pertinent
+        if photovoltaic_found and communal_found and subsidy_found:
+            relevant_text = self.extract_relevant_text(text_content, photovoltaic_keywords + communal_keywords + subsidy_keywords)
+            return relevant_text
+
+        return None
+
+    def extract_relevant_text(self, text, keywords, max_length=15000):
+        """
+        Extrait un segment de texte autour de chaque mot-clé trouvé, avec 3 000 caractères avant et 12 000 caractères après.
+        Évite les doublons en vérifiant le chevauchement des segments.
+        """
+        segments = []
+        last_end = 0  # Pour suivre la fin du dernier segment ajouté
+
+        for keyword in keywords:
+            start = 0
+            while start < len(text):
+                index = text.find(keyword, start)
+                if index == -1:
+                    break
+                # Définir les limites du segment
+                segment_start = max(0, index - 3000)
+                segment_end = min(len(text), index + 12000)
+
+                # Ajouter le segment seulement s'il ne chevauche pas le dernier segment ajouté
+                if segment_start >= last_end:
+                    segments.append(text[segment_start:segment_end])
+                    last_end = segment_end  # Mettre à jour la fin du dernier segment ajouté
+
+                start = index + len(keyword)
+
+        # Combiner les segments
+        combined_text = " ".join(segments)
+
+        # Nettoyer le texte pour supprimer les espaces blancs, tabulations et nouvelles lignes excessives
+        cleaned_text = re.sub(r'\s+', ' ', combined_text).strip()
+
+        return cleaned_text[:max_length]
 
     def errback(self, failure):
         """
@@ -182,17 +206,12 @@ class SubsidiesSpiderSpider(scrapy.Spider):
                 pages_pertinentes = self.results.get(commune_name, [])
                 
                 if pages_pertinentes:
-                    # Trier les pages par score décroissant
-                    pages_pertinentes.sort(key=lambda x: x['score'], reverse=True)
-                    # Garder seulement les trois premiers
-                    top_pages = pages_pertinentes[:3]
-                    
-                    # Écrit le JSON de la commune avec les trois meilleurs scores
+                    # Écrit le JSON de la commune avec les résultats
                     file_name = f"{commune_name}.json"
                     file_path = os.path.join(self.output_dir, file_name)
                     with open(file_path, 'w', encoding='utf-8') as f:
-                        json.dump(top_pages, f, ensure_ascii=False, indent=2)
-                    self.logger.info(f"[{commune_name}] => {file_name} créé ({len(top_pages)} pages pertinentes).")
+                        json.dump(pages_pertinentes, f, ensure_ascii=False, indent=2)
+                    self.logger.info(f"[{commune_name}] => {file_name} créé ({len(pages_pertinentes)} pages pertinentes).")
                 else:
                     # Liste les communes sans info
                     nf.write(f"{commune_name}\n")
