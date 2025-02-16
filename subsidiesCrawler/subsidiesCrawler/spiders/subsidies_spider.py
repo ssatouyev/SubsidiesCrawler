@@ -3,6 +3,13 @@ import json
 import os
 from urllib.parse import urlparse
 import re
+from pdfminer.high_level import extract_text
+import fitz
+import pytesseract
+from PIL import Image
+from io import BytesIO
+
+pytesseract.pytesseract.tesseract_cmd = '/opt/homebrew/bin/tesseract'
 
 class SubsidiesSpiderSpider(scrapy.Spider):
     name = "subsidies_spider"
@@ -86,14 +93,19 @@ class SubsidiesSpiderSpider(scrapy.Spider):
             return
         self.visited_urls.add(response.url)
 
-        # Si le contenu n'est pas textuel (ex. PDF), on ignore le traitement de la page
+        # Vérifier le type de contenu
         content_type = response.headers.get('Content-Type', b'').decode('utf-8')
-        if "text" not in content_type:
+        if "application/pdf" in content_type:
+            # Traiter le PDF
+            pdf_text = self.extract_text_from_pdf(response)
+            relevant_text = self.find_keywords_in_text(pdf_text)
+        elif "text" in content_type:
+            # Traiter le texte HTML
+            relevant_text = self.find_keywords(response)
+        else:
             self.logger.debug(f"Contenu non-textuel détecté dans parse, ignorer le traitement pour: {response.url} (Content-Type: {content_type})")
             return
 
-        # Vérification de la présence des mots-clés
-        relevant_text = self.find_keywords(response)
         if relevant_text:
             self.logger.info(f"[{commune_name}] Page pertinente : {response.url}")
             
@@ -129,6 +141,54 @@ class SubsidiesSpiderSpider(scrapy.Spider):
                         meta={"commune_name": commune_name, "depth": current_depth + 1, "ofs": ofs, "postal_code": postal_code},
                         errback=self.errback
                     )
+
+    def extract_text_from_pdf(self, response):
+        """
+        Extrait le texte d'un fichier PDF.
+        """
+        try:
+            with fitz.open(stream=BytesIO(response.body), filetype="pdf") as doc:
+                text = ""
+                for page in doc:
+                    page_text = ""
+                    blocks = page.get_text("blocks")
+                    for block in blocks:
+                        if block[6] == 0:
+                            block_text = block[4].lower()
+                            page_text += f"{block_text}\n"
+                    if len(page_text) == 0:
+                        pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
+                        img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
+                        page_text = pytesseract.image_to_string(img, lang='fra')
+                    text += f"\n\nPage {page.number + 1}:\n{page_text}"
+                return text
+        except Exception as e:
+            self.logger.error(f"Erreur lors de l'extraction du texte du PDF: {e}")
+            return ""
+
+    def find_keywords_in_text(self, text):
+        """
+        Vérifie la présence des catégories de mots-clés dans le texte.
+        Retourne le texte pertinent si toutes les catégories de mots-clés sont trouvées, sinon None.
+        """
+        # Convertir le texte en minuscules pour la recherche
+        text = text.lower()
+
+        # Vérifier la présence de chaque catégorie de mots-clés
+        photovoltaic_keywords = ["photovoltaïque", "photovoltaïques", "photovoltaic"]
+        communal_keywords = ["commune", "communes", "communal"]
+        subsidy_keywords = ["subvention", "subventions"]
+
+        photovoltaic_found = any(keyword in text for keyword in photovoltaic_keywords)
+        communal_found = any(keyword in text for keyword in communal_keywords)
+        subsidy_found = any(keyword in text for keyword in subsidy_keywords)
+
+        # Si tous les mots-clés sont trouvés, extraire le texte pertinent
+        if photovoltaic_found and communal_found and subsidy_found:
+            relevant_text = self.extract_relevant_text(text, photovoltaic_keywords + communal_keywords + subsidy_keywords)
+            return relevant_text
+
+        return None
 
     def find_keywords(self, response):
         """
